@@ -1,4 +1,6 @@
+ 
 import '../styles/globals.css'
+import '../styles/main.css'
 import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
 
 function MyApp({ Component, pageProps }) {
