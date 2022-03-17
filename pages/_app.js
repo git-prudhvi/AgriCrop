@@ -1,6 +1,9 @@
 
 import '../styles/globals.css'
 import '../styles/main.css'
+import '../styles/marketplace.css'
+import '../styles/sidebar.css'
+import '../styles/logout.css'
 import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
 
 function MyApp({ Component, pageProps }) {

@@ -1,4 +1,23 @@
-<head>hello</head>
-export default function marketplace() {
-    return <div>hello</div>
+import React from "react";
+import Sidebar from "../components/Sidebar";
+
+function MainLayout(props) {
+  const { showPortis, isLoggedIn, setWallet, setIsLoggedIn, wallet, email } = props;
+
+  return (
+    <div className="main__layout">
+      <Sidebar
+        showPortis={showPortis}
+        isLoggedIn={isLoggedIn}
+        setWallet={setWallet}
+        setIsLoggedIn={setIsLoggedIn}
+        wallet={wallet}
+        email={email}
+      />
+
+      {props.children}
+    </div>
+  );
 }
+
+export default MainLayout;

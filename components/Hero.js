@@ -11,7 +11,7 @@ const style = {
     title: `relative text-white text-[46px] font-semibold`,
     description: `text-[#8a939b] container-[400px] text-2xl mt-[0.8rem] mb-[2.5rem]`,
     ctaContainer: `flex`,
-    accentedButton: ` relative text-lg font-semibold px-12 py-4 bg-[#2181e2] rounded-lg mr-5 text-white hover:bg-[#42a0ff] cursor-pointer`,
+    accentedButton: ` relative text-lg font-semibold px-12 py-4 bg-[orange] rounded-lg mr-5 text-white hover:bg-[#42a0ff] cursor-pointer`,
     button: ` relative text-lg font-semibold px-12 py-4 bg-[#363840] rounded-lg mr-5 text-[#e4e8ea] hover:bg-[#4c505c] cursor-pointer`,
     cardContainer: `rounded-[3rem]`,
     infoContainer: `h-20 bg-[#313338] p-4 rounded-b-lg flex items-center text-white`,
@@ -24,8 +24,12 @@ const Hero = () => {
 
     const MyButton = React.forwardRef(({ onClick, href }, ref) => {
         return (
-            <a href={"D:\AgriCrop\pages\marketplace.js"} onClick={onClick} ref={ref}>Market Place</a>
-        )
+            <a href={'D:/ETH/AgriCrop/components/ded.js'} onClick={onClick} ref={ref}>
+              <div className={style.ctaContainer}>
+                  <button className={style.accentedButton}>MARKETPLACE</button>
+              </div>
+            </a>
+          )
     })
 
     return (
