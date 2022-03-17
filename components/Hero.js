@@ -1,4 +1,7 @@
+import Router from 'next/router'
+import Link from 'next/link'
 import React from 'react'
+import marketplace from '../pages/marketplace'
 
 const style = {
     wrapper: `relative`,
@@ -18,6 +21,13 @@ const style = {
 }
 
 const Hero = () => {
+
+    const MyButton = React.forwardRef(({ onClick, href }, ref) => {
+        return (
+            <a href={"D:\AgriCrop\pages\marketplace.js"} onClick={onClick} ref={ref}>Market Place</a>
+        )
+    })
+
     return (
         <div className={style.wrapper}>
             <div className={style.container}>
@@ -30,8 +40,9 @@ const Hero = () => {
                             OpenSea is the world&apos;s first and largest NFT marketplace
                         </div>
                         <div className={style.ctaContainer}>
-                            <button className={style.accentedButton}>Explore</button>
-                            <button className={style.button}>Create</button>
+                            <Link href="/marketplace">
+                                <MyButton />
+                            </Link>
                         </div>
                     </div>
                     <div className={style.cardContainer}>
@@ -44,7 +55,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
