@@ -1,37 +1,109 @@
-## Welcome to GitHub Pages
+import Head from 'next/head'
+import { useState } from 'react';
 
-You can use the [editor on GitHub](https://github.com/git-prudhvi/AgriCrop/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+import { ethers } from 'ethers';
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+import { useWeb3 } from '@3rdweb/hooks';
 
-```markdown
-Syntax highlighted code block
+//import Card from 'react-bootstrap/Card'
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+import Hero from "../components/Hero"
+import Header from '../components/Header';
+import toast, { Toaster } from 'react-hot-toast'
 
-1. Numbered
-2. List
+const style = {
+    wrapper: ``,
+    walletConnectWrapper: `flex flex-col justify-center items-center h-screen w-screen bg-[grey] `,
+    button: `border border-[#282b2f] bg-[orange] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-black`,
+    details: `text-lg text-center text=[#282b2f] font-semibold mt-4`,
+    background: `max-w-sm rounded overflow-hidden shadow-lg bg-[white]`,
+    cardsize: `px-6 py-4`,
+    bigFont: `font-bold text-xl mb-2`,
+    smallFont: `text-gray-700 text-base`,
+    bigButton: `bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded`
 
-**Bold** and _Italic_ and `Code` text
+}
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+export default function Home() {
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/git-prudhvi/AgriCrop/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    const { address, connectWallet } = useWeb3()
+    const [loginState, setLoginState] = useState();
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+    const login = async () => {
+        setLoginState("Connecting to your wallet..");
+        if (!window.ethereum) {
+            setLoginState("No MetaMask wallet.. please install it")
+            return;
+
+        }
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        await provider.send("eth_requestAccounts", []);
+        const signer = provider.getSigner();
+
+        const walletAddr = await signer.getAddress();
+        console.log("walletAddr", walletAddr)
+        const signature = await signer.signMessage("prudhvi nibba");
+        console.log('signature', signature)
+
+
+
+
+
+
+
+
+    }
+
+    return (
+        <div className={style.wrapper}>
+            <Toaster position="top-center" reverseOrder={false} />
+            {address ? (
+                <>
+                    <Header />
+                    <Hero />
+                </>
+            ) : (
+                <div className={style.walletConnectWrapper}>
+                    <div className={style.background}>
+                        <img src="https://www.linkpicture.com/q/metamask-3.gif" alt="" />
+                        <div className={style.cardsize}>
+                            <div className={style.bigFont}>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Connect to MetaMask</div>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <button
+                                className={style.bigButton}
+                                onClick={() => connectWallet('injected')}
+                            >
+
+                                Connect Wallet
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            )}
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    )
+
+}
