@@ -1,41 +1,64 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from "react";
 
-// import { InlineIcon } from '@iconify/react';
-// import ethereumIcon from '@iconify-icons/mdi/ethereum';
+import {
+  ProSidebar,
+  Menu,
+  MenuItem,
+  SidebarHeader,
+  SidebarFooter,
+  SidebarContent,
+} from "react-pro-sidebar";
+import { FaList, FaRegHeart } from "react-icons/fa";
+import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
+import { RiPencilLine } from "react-icons/ri";
+import { BiCog } from "react-icons/bi";
+import "react-pro-sidebar/dist/css/styles.css";
 
-import { useHistory } from 'react-router-dom'
 
-
-function Sidebar({showPortis, isLoggedIn, setWallet, setIsLoggedIn, wallet, email}) {
-
-
-
-
-    return (
-        <div className='sidebar'>
-            <div className="sidebar__logo">
-                <h2>Depocalypse</h2>
+const Sidebar = () => {
+    const [menuCollapse, setMenuCollapse] = useState(false)
+  const menuIconClick = () => {
+    menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
+  };
+  return (
+    <>
+      <div id="sidebar">
+          { }
+        <ProSidebar collapsed={menuCollapse}>
+          <SidebarHeader>
+          <div className="logotext">
+              { }
+              <p>{menuCollapse ? "Logo" : "Big Logo"}</p>
             </div>
-
-            <div className="sidebar__options">
-                <h3 onClick={() => push('/')}>Marketplace</h3>
-                <h3 onClick={() => push('/auctions')}>Auctionplace</h3>
-                <h3 onClick={() => push('/charity')}>Charity</h3>
-                <h3 onClick={() => push('/create-nft')}>Create NFT</h3>
-                <h3 onClick={() => push('/your-gallery')}>Your Gallery</h3>
-                
+            <div className="closemenu" onClick={menuIconClick}>
+                { }
+              {menuCollapse ? (
+                <FiArrowRightCircle/>
+              ) : (
+                <FiArrowLeftCircle/>
+              )}
             </div>
+          </SidebarHeader>
+          <SidebarContent>
+            <Menu iconShape="square">
+              <MenuItem active={true} icon={<FiHome />}>
+                Home
+              </MenuItem>
+              <MenuItem icon={<FaList />}>Category</MenuItem>
+              <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem>
+              <MenuItem icon={<RiPencilLine />}>Author</MenuItem>
+              <MenuItem icon={<BiCog />}>Settings</MenuItem>
+            </Menu>
+          </SidebarContent>
+          <SidebarFooter>
+            <Menu iconShape="square">
+              <MenuItem icon={<FiLogOut />}>Logout</MenuItem>
+            </Menu>
+          </SidebarFooter>
+        </ProSidebar>
+      </div>
+    </>
+  );
+};
 
-            <div className="sidebar__priceFeed">
-                <span>Price feed - Powered by <img src="https://cryptologos.cc/logos/chainlink-link-logo.png" alt="" /></span> 
-                <span>MATIC/USD - $</span>
-            </div>
-
-           
-
-            <button className="show-portis" onClick={showPortis}>Show Account <img src="https://docs.portis.io/_media/logo_bw.svg" alt="powered by portis" /></button>
-        </div>
-    )
-}
-
-export default Sidebar
+export default Sidebar;
