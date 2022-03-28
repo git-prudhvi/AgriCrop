@@ -17,6 +17,8 @@ function MyApp({ Component, pageProps }) {
     >
       <Component {...pageProps} />
     </ThirdwebWeb3Provider>
+
+    
   )
 }
 
