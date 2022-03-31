@@ -40,7 +40,6 @@ export default function Home() {
             <Toaster position="top-center" reverseOrder={false} />
             {address ? (
                 <>
-                    <Header />
                     <Hero />
                 </>
             ) : (

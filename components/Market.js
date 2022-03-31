@@ -22,12 +22,12 @@ function Market() {
               Home
             </a>
           </Link>
-          <Link href="/create-nft">
+          <Link href="/sellnft">
             <a className="mr-6 text-pink-500">
               Sell NFT
             </a>
           </Link>
-          <Link href="/my-nfts">
+          <Link href="/mynfts">
             <a className="mr-6 text-pink-500">
               My NFTs
             </a>
@@ -39,9 +39,7 @@ function Market() {
           </Link>
         </div>
       </nav>
-
     </div>
   )
 }
-
 export default Market

@@ -28,7 +28,7 @@ const Sidebar = () => {
           <SidebarHeader>
           <div className="logotext">
               { }
-              <p>{menuCollapse ? "Logo" : "Big Logo"}</p>
+              <p>{menuCollapse ? "AgCr" : "AgriCrop Marketplace"}</p>
             </div>
             <div className="closemenu" onClick={menuIconClick}>
                 { }
@@ -41,13 +41,10 @@ const Sidebar = () => {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-              <MenuItem active={true} icon={<FiHome />}>
-                Home
-              </MenuItem>
-              <MenuItem icon={<FaList />}>Category</MenuItem>
-              <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem>
-              <MenuItem icon={<RiPencilLine />}>Author</MenuItem>
-              <MenuItem icon={<BiCog />}>Settings</MenuItem>
+              <MenuItem active={true} icon={<FiHome />}>Home</MenuItem>
+              <MenuItem icon={<FaList />}>Sell NFT<Link to="/sellnft" /></MenuItem>
+              <MenuItem icon={<FaRegHeart />}>My NFT<Link to="/mynft" /></MenuItem>
+              <MenuItem icon={<RiPencilLine />}>Dashboard<Link to="/dashboard" /></MenuItem>
             </Menu>
           </SidebarContent>
           <SidebarFooter>

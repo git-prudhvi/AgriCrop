@@ -7,13 +7,10 @@ function MainLayout(props) {
     const { showPortis, isLoggedIn, setWallet, setIsLoggedIn, wallet, email } = props;
 
     return (
-        <><div className="main__layout">
-            <Sidebar />
+        <div className="main__layout">
+            <Market />
+        </div>
 
-            {props.children}
-        </div><div className="market">
-                <Market />
-            </div></>
     );
 
 }
