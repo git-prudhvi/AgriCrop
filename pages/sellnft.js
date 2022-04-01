@@ -64,7 +64,7 @@ export default function CreateItem() {
     let transaction = await contract.createToken(url, price, { value: listingPrice })
     await transaction.wait()
    
-    router.push('/')
+    router.push('/marketz')
   }
 
   return (

@@ -27,7 +27,7 @@ function Market() {
               Sell NFT
             </a>
           </Link>
-          <Link href="/mynfts">
+          <Link href="/mynft">
             <a className="mr-6 text-pink-500">
               My NFTs
             </a>
