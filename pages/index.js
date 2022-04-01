@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { ethers } from 'ethers';
 import { useWeb3 } from '@3rdweb/hooks';
 import Hero from "../components/Hero"
-import Header from '../components/Header';
 import toast, { Toaster } from 'react-hot-toast'
 
 const style = {

@@ -1,7 +1,7 @@
 import Router from 'next/router'
 import Link from 'next/link'
 import React from 'react'
-import marketplace from '../pages/marketplace'
+import Market from '../pages/Market'
 
 const style = {
     wrapper: `relative`,
@@ -44,7 +44,7 @@ const Hero = () => {
                             OpenSea is the world&apos;s first and largest NFT marketplace
                         </div>
                         <div className={style.ctaContainer}>
-                            <Link href="/marketplace">
+                            <Link href="/Market">
                                 <MyButton />
                             </Link>
                         </div>
