@@ -10,35 +10,49 @@ import web3Modal from 'web3Modal'
 
 import Link from 'next/link';
 
+const style = {
+  wrapper: ``,
+  walletConnectWrapper: `bg-[lightskyblue] flex flex-col justify-center items-center h-screen w-screen  `,
+  button: `border border-[#282b2f] bg-[orange] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-black`,
+  details: `text-lg text-center text=[#282b2f] font-semibold mt-4`,
+  background: `max-w-sm rounded-lg overflow-hidden shadow-lg bg-[white]`,
+  cardsize: `px-6 py-4`,
+  bigFont: `text=[#D37506]-700   font-bold text-xl mb-2`,
+  smallFont: `text-gray-700 text-base`,
+  bigButton: ` text-white text-[23px] bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-9 py-6 text-center mr-1 mb-1`,
+}
+
 function Market() {
   return (
-    <div>
-      <nav className="border-b p-6">
-        <p className="text-4xl font-bold">AgriCrop Marketplace</p>
-        <div className="flex mt-4">
-          <Link href="/">
-            <a className="mr-4 text-pink-500">
-              Home
-            </a>
-          </Link>
-          <Link href="/sellnft">
-            <a className="mr-6 text-pink-500">
-              Sell NFT
-            </a>
-          </Link>
-          <Link href="/mynft">
-            <a className="mr-6 text-pink-500">
-              My NFTs
-            </a>
-          </Link>
-          <Link href="/dashboard">
-            <a className="mr-6 text-pink-500">
-              Dashboard
-            </a>
-          </Link>
-        </div>
-      </nav>
-    </div>
+    <div className={style.walletConnectWrapper}>
+      <div>
+        <nav className="border-b p-10">
+          <p className="text-7xl font-medium">AgriCrop Marketplace</p>
+          <div className="flex mt-4">
+            <Link href="/">
+              <a className="mr-6 text-pink-500">
+                Home
+              </a>
+            </Link>
+            <Link href="/sellnft">
+              <a className="mr-6 text-pink-500">
+                Sell NFT
+              </a>
+            </Link>
+            <Link href="/mynft">
+              <a className="mr-6 text-pink-500">
+                My NFTs
+              </a>
+            </Link>
+            <Link href="/dashboard">
+              <a className="mr-6 text-pink-500">
+                Dashboard
+              </a>
+            </Link>
+          </div>
+        </nav>
+      </div>
+      </div>
   )
 }
 export default Market

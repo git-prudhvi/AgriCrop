@@ -38,10 +38,10 @@ const Hero = () => {
                 <div className={style.contentWrapper}>
                     <div className={style.copyContainer}>
                         <div className={style.title}>
-                            Discover, collect, and sell extraordinary NFTs
+                            Upcoming De-Fi for Farmers.
                         </div>
                         <div className={style.description}>
-                            OpenSea is the world&apos;s first and largest NFT marketplace
+                            AgriCrop is a NFT marketplace for crops, agriculture tools.
                         </div>
                         <div className={style.ctaContainer}>
                             <Link href="/Market">
