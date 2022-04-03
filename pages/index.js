@@ -46,8 +46,8 @@ export default function Home() {
                     <div className={style.background}>
                         <img src="https://www.linkpicture.com/q/metamask_1.gif" alt="" />
                         <div className={style.cardsize}>
-                            
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                             <button
                                 className={style.bigButton}
                                 onClick={() => connectWallet('injected')}

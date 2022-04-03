@@ -11,12 +11,10 @@ import web3Modal from 'web3Modal'
 import Link from 'next/link';
 
 const style = {
-  container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://www.linkpicture.com/q/Food-Tank-SRI-Rice-1.png')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
-  wrapper: ``,
-  walletConnectWrapper: `bg-[lightskyblue] flex flex-col justify-center items-center h-screen w-screen  `,
+  wrapper: `relative`,
+  walletConnectWrapper: `before:content-['']  before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://www.linkpicture.com/q/backm.png')] before:bg-cover before:bg-center before:opacity-75 `,
   button: `border border-[#282b2f] bg-[orange] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-black`,
   details: `text-lg text-center text=[#282b2f] font-semibold mt-4`,
-  background: `max-w-sm rounded-lg overflow-hidden shadow-lg bg-[white]`,
   cardsize: `px-6 py-4`,
   bigFont: `text=[#D37506]-700   font-bold text-xl mb-2`,
   smallFont: `text-gray-700 text-base`,
@@ -25,8 +23,9 @@ const style = {
 
 function Market() {
   return (
-    <div className={style.container}>
-      <div>
+    <div className={style.walletConnectWrapper}>
+
+      <div className={style.wrapper}>
         <nav className="border-b p-10">
           <p className="text-7xl font-medium">AgriCrop Marketplace</p>
           <div className="flex mt-4">
@@ -53,7 +52,9 @@ function Market() {
           </div>
         </nav>
       </div>
-      </div>
+    </div>
+
+
   )
 }
 export default Market
