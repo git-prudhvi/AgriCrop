@@ -5,6 +5,12 @@ import { useRouter } from 'next/router'
 import Web3Modal from 'web3modal'
 
 const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0')
+const style = {
+  wrapper: `relative w-1/8 flex flex-col pb-1`,
+  back: `before:content-['']  before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://www.linkpicture.com/q/backm.png')] before:bg-cover before:bg-center before:opacity-75 `,
+
+}
+
 
 import {
   marketplaceAddress
@@ -30,7 +36,7 @@ export default function CreateItem() {
       setFileUrl(url)
     } catch (error) {
       console.log('Error uploading file: ', error)
-    }  
+    }
   }
   async function uploadToIPFS() {
     const { name, description, price } = formInput
@@ -46,7 +52,7 @@ export default function CreateItem() {
       return url
     } catch (error) {
       console.log('Error uploading file: ', error)
-    }  
+    }
   }
 
   async function listNFTForSale() {
@@ -63,14 +69,14 @@ export default function CreateItem() {
     listingPrice = listingPrice.toString()
     let transaction = await contract.createToken(url, price, { value: listingPrice })
     await transaction.wait()
-   
+
     router.push('/marketplace')
   }
 
   return (
-    <div className="flex justify-center">
-      <div className="w-1/2 flex flex-col pb-12">
-        <input 
+    <div className={style.back}>
+      <div className={style.wrapper}>
+        <input
           placeholder="Asset Name"
           className="mt-8 border rounded p-4"
           onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
