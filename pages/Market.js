@@ -11,6 +11,7 @@ import web3Modal from 'web3Modal'
 import Link from 'next/link';
 
 const style = {
+  container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://www.linkpicture.com/q/Food-Tank-SRI-Rice-1.png')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
   wrapper: ``,
   walletConnectWrapper: `bg-[lightskyblue] flex flex-col justify-center items-center h-screen w-screen  `,
   button: `border border-[#282b2f] bg-[orange] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-black`,
@@ -24,7 +25,7 @@ const style = {
 
 function Market() {
   return (
-    <div className={style.walletConnectWrapper}>
+    <div className={style.container}>
       <div>
         <nav className="border-b p-10">
           <p className="text-7xl font-medium">AgriCrop Marketplace</p>

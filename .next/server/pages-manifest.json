@@ -1,0 +1,14 @@
+{
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/Market": "pages/Market.html",
+  "/_app": "pages/_app.js",
+  "/api/hello": "pages/api/hello.js",
+  "/dashboard": "pages/dashboard.html",
+  "/": "pages/index.html",
+  "/mynft": "pages/mynft.html",
+  "/marketplace": "pages/marketplace.html",
+  "/sellnft": "pages/sellnft.html",
+  "/resell-nft": "pages/resell-nft.html",
+  "/404": "pages/404.html"
+}

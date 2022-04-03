@@ -1,0 +1,95 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-5cd94c89d3acac5f.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/p7fJ3jImZfNmgUVWxhWAq/_buildManifest.js",
+    "static/p7fJ3jImZfNmgUVWxhWAq/_ssgManifest.js",
+    "static/p7fJ3jImZfNmgUVWxhWAq/_middlewareManifest.js"
+  ],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-91aa7291279f8460.js",
+      "static/chunks/framework-bb5c596eafb42b22.js",
+      "static/chunks/main-d17f66f84a4f77db.js",
+      "static/chunks/3ee401c3-5efa46f1e4c5be47.js",
+      "static/chunks/591-d7521b07962e1e90.js",
+      "static/chunks/pages/index-c9c226472b295ce6.js"
+    ],
+    "/Market": [
+      "static/chunks/webpack-91aa7291279f8460.js",
+      "static/chunks/framework-bb5c596eafb42b22.js",
+      "static/chunks/main-d17f66f84a4f77db.js",
+      "static/chunks/3ee401c3-5efa46f1e4c5be47.js",
+      "static/chunks/591-d7521b07962e1e90.js",
+      "static/chunks/pages/Market-bff0d79c0aa145a4.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-91aa7291279f8460.js",
+      "static/chunks/framework-bb5c596eafb42b22.js",
+      "static/chunks/main-d17f66f84a4f77db.js",
+      "static/css/43cff5ad00fb0faf.css",
+      "static/chunks/pages/_app-845e886b24cbc214.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-91aa7291279f8460.js",
+      "static/chunks/framework-bb5c596eafb42b22.js",
+      "static/chunks/main-d17f66f84a4f77db.js",
+      "static/chunks/pages/_error-0509152792d2b207.js"
+    ],
+    "/dashboard": [
+      "static/chunks/webpack-91aa7291279f8460.js",
+      "static/chunks/framework-bb5c596eafb42b22.js",
+      "static/chunks/main-d17f66f84a4f77db.js",
+      "static/chunks/0a6e12db-618a59df53cb564c.js",
+      "static/chunks/294-bb9749f32f4db5f1.js",
+      "static/chunks/669-da7a0bdf644d830c.js",
+      "static/chunks/704-62937d449022db32.js",
+      "static/chunks/pages/dashboard-bd7c5156dd6c58f7.js"
+    ],
+    "/marketplace": [
+      "static/chunks/webpack-91aa7291279f8460.js",
+      "static/chunks/framework-bb5c596eafb42b22.js",
+      "static/chunks/main-d17f66f84a4f77db.js",
+      "static/chunks/0a6e12db-618a59df53cb564c.js",
+      "static/chunks/294-bb9749f32f4db5f1.js",
+      "static/chunks/669-da7a0bdf644d830c.js",
+      "static/chunks/704-62937d449022db32.js",
+      "static/chunks/pages/marketplace-a1ba40558a385b42.js"
+    ],
+    "/mynft": [
+      "static/chunks/webpack-91aa7291279f8460.js",
+      "static/chunks/framework-bb5c596eafb42b22.js",
+      "static/chunks/main-d17f66f84a4f77db.js",
+      "static/chunks/0a6e12db-618a59df53cb564c.js",
+      "static/chunks/294-bb9749f32f4db5f1.js",
+      "static/chunks/669-da7a0bdf644d830c.js",
+      "static/chunks/704-62937d449022db32.js",
+      "static/chunks/pages/mynft-7a3e449a56623438.js"
+    ],
+    "/resell-nft": [
+      "static/chunks/webpack-91aa7291279f8460.js",
+      "static/chunks/framework-bb5c596eafb42b22.js",
+      "static/chunks/main-d17f66f84a4f77db.js",
+      "static/chunks/0a6e12db-618a59df53cb564c.js",
+      "static/chunks/294-bb9749f32f4db5f1.js",
+      "static/chunks/669-da7a0bdf644d830c.js",
+      "static/chunks/704-62937d449022db32.js",
+      "static/chunks/pages/resell-nft-e245a32fc85e5ff3.js"
+    ],
+    "/sellnft": [
+      "static/chunks/webpack-91aa7291279f8460.js",
+      "static/chunks/framework-bb5c596eafb42b22.js",
+      "static/chunks/main-d17f66f84a4f77db.js",
+      "static/chunks/0a6e12db-618a59df53cb564c.js",
+      "static/chunks/294-bb9749f32f4db5f1.js",
+      "static/chunks/764-c427d2c2141616c0.js",
+      "static/chunks/977-043e540812b2e3a4.js",
+      "static/chunks/704-62937d449022db32.js",
+      "static/chunks/pages/sellnft-2e84f5543ce5da69.js"
+    ]
+  },
+  "ampFirstPages": []
+}
