@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function handler(req, res) {
     res.status(200).json({
-        name: 'John Doe'
+        name: "John Doe"
     });
 };
 

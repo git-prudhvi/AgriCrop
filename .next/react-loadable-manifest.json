@@ -12,7 +12,7 @@
   "..\\node_modules\\@3rdweb\\hooks\\dist\\3rdweb-hooks.browser.esm.js -> @web3-react/walletconnect-connector": {
     "id": 83929,
     "files": [
-      "static/chunks/929.fb7e4d74c8e5db40.js"
+      "static/chunks/929.73c830e9534550da.js"
     ]
   },
   "..\\node_modules\\@3rdweb\\hooks\\dist\\3rdweb-hooks.browser.esm.js -> @web3-react/walletlink-connector": {
@@ -28,18 +28,18 @@
     ]
   },
   "..\\node_modules\\@web3-react\\walletconnect-connector\\dist\\walletconnect-connector.esm.js -> @walletconnect/ethereum-provider": {
-    "id": 44952,
+    "id": 1070,
     "files": [
-      "static/chunks/764-c427d2c2141616c0.js",
-      "static/chunks/952.c3628a67e2a07ded.js",
+      "static/chunks/764.c427d2c2141616c0.js",
+      "static/chunks/70.ced837dddae46fd7.js",
       "static/chunks/563.fbd5f4f9151f8110.js"
     ]
   },
   "..\\node_modules\\@web3-react\\walletlink-connector\\dist\\walletlink-connector.esm.js -> walletlink": {
     "id": 80983,
     "files": [
-      "static/chunks/764-c427d2c2141616c0.js",
-      "static/chunks/983.2175126528426db6.js",
+      "static/chunks/764.c427d2c2141616c0.js",
+      "static/chunks/983.cb304b400954404b.js",
       "static/chunks/282.1dfbc13fa809cc98.js"
     ]
   }

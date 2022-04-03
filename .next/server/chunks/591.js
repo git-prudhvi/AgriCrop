@@ -41,7 +41,7 @@ const style = {
 const Hero = ()=>{
     const MyButton = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_3___default().forwardRef(({ onClick , href  }, ref)=>{
         return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-            href: 'D:/ETH/AgriCrop/components/ded.js',
+            href: "D:/ETH/AgriCrop/components/ded.js",
             onClick: onClick,
             ref: ref,
             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -132,11 +132,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const style = {
-    wrapper: ``,
-    walletConnectWrapper: `bg-[lightskyblue] flex flex-col justify-center items-center h-screen w-screen  `,
+    wrapper: `relative`,
+    walletConnectWrapper: `before:content-['']  before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://www.linkpicture.com/q/backm.png')] before:bg-cover before:bg-center before:opacity-75 `,
     button: `border border-[#282b2f] bg-[orange] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-black`,
     details: `text-lg text-center text=[#282b2f] font-semibold mt-4`,
-    background: `max-w-sm rounded-lg overflow-hidden shadow-lg bg-[white]`,
     cardsize: `px-6 py-4`,
     bigFont: `text=[#D37506]-700   font-bold text-xl mb-2`,
     smallFont: `text-gray-700 text-base`,
@@ -146,6 +145,7 @@ function Market() {
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
         className: style.walletConnectWrapper,
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            className: style.wrapper,
             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("nav", {
                 className: "border-b p-10",
                 children: [
