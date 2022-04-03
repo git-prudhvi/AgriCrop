@@ -28,22 +28,22 @@ function Market() {
           <p className="text-7xl font-medium">AgriCrop Marketplace</p>
           <div className="flex mt-4">
             <Link href="/">
-              <a className="mr-6 text-pink-500">
+              <a className="mr-6 text-black-500">
                 Home
               </a>
             </Link>
             <Link href="/sellnft">
-              <a className="mr-6 text-pink-500">
+              <a className="mr-6 text-black-500">
                 Sell NFT
               </a>
             </Link>
             <Link href="/mynft">
-              <a className="mr-6 text-pink-500">
+              <a className="mr-6 text-black-500">
                 My NFTs
               </a>
             </Link>
             <Link href="/dashboard">
-              <a className="mr-6 text-pink-500">
+              <a className="mr-6 text-black-500">
                 Dashboard
               </a>
             </Link>
