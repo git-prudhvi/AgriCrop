@@ -6,8 +6,6 @@ import { useWeb3 } from '@3rdweb/hooks';
 import Hero from "../components/Hero"
 import toast, { Toaster } from 'react-hot-toast';
 
-import web3Modal from 'web3Modal'
-
 import Link from 'next/link';
 
 const style = {

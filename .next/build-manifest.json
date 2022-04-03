@@ -1,93 +1,44 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills-5cd94c89d3acac5f.js"
+    "static/chunks/polyfills.js"
   ],
-  "devFiles": [],
-  "ampDevFiles": [],
+  "devFiles": [
+    "static/chunks/react-refresh.js"
+  ],
+  "ampDevFiles": [
+    "static/chunks/webpack.js",
+    "static/chunks/amp.js"
+  ],
   "lowPriorityFiles": [
-    "static/-xXM0ypS9TF5FOX-6n3PX/_buildManifest.js",
-    "static/-xXM0ypS9TF5FOX-6n3PX/_ssgManifest.js",
-    "static/-xXM0ypS9TF5FOX-6n3PX/_middlewareManifest.js"
+    "static/development/_buildManifest.js",
+    "static/development/_ssgManifest.js",
+    "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/chunks/webpack-98d49c981df2f6c0.js",
-      "static/chunks/framework-bb5c596eafb42b22.js",
-      "static/chunks/main-9c07fd5b45d39649.js",
-      "static/chunks/3ee401c3-5efa46f1e4c5be47.js",
-      "static/chunks/591-7a584a5f0a5d7775.js",
-      "static/chunks/pages/index-e8793ca2ee90ed37.js"
-    ],
     "/Market": [
-      "static/chunks/webpack-98d49c981df2f6c0.js",
-      "static/chunks/framework-bb5c596eafb42b22.js",
-      "static/chunks/main-9c07fd5b45d39649.js",
-      "static/chunks/3ee401c3-5efa46f1e4c5be47.js",
-      "static/chunks/591-7a584a5f0a5d7775.js",
-      "static/chunks/pages/Market-bff0d79c0aa145a4.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Market.js"
     ],
     "/_app": [
-      "static/chunks/webpack-98d49c981df2f6c0.js",
-      "static/chunks/framework-bb5c596eafb42b22.js",
-      "static/chunks/main-9c07fd5b45d39649.js",
-      "static/css/40ce29cd004eca1d.css",
-      "static/chunks/pages/_app-bdf13dccf57211fe.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_app.js"
     ],
     "/_error": [
-      "static/chunks/webpack-98d49c981df2f6c0.js",
-      "static/chunks/framework-bb5c596eafb42b22.js",
-      "static/chunks/main-9c07fd5b45d39649.js",
-      "static/chunks/pages/_error-0509152792d2b207.js"
-    ],
-    "/dashboard": [
-      "static/chunks/webpack-98d49c981df2f6c0.js",
-      "static/chunks/framework-bb5c596eafb42b22.js",
-      "static/chunks/main-9c07fd5b45d39649.js",
-      "static/chunks/0a6e12db-618a59df53cb564c.js",
-      "static/chunks/294-bb9749f32f4db5f1.js",
-      "static/chunks/669-da7a0bdf644d830c.js",
-      "static/chunks/704-62937d449022db32.js",
-      "static/chunks/pages/dashboard-bd7c5156dd6c58f7.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_error.js"
     ],
     "/marketplace": [
-      "static/chunks/webpack-98d49c981df2f6c0.js",
-      "static/chunks/framework-bb5c596eafb42b22.js",
-      "static/chunks/main-9c07fd5b45d39649.js",
-      "static/chunks/0a6e12db-618a59df53cb564c.js",
-      "static/chunks/294-bb9749f32f4db5f1.js",
-      "static/chunks/669-da7a0bdf644d830c.js",
-      "static/chunks/704-62937d449022db32.js",
-      "static/chunks/pages/marketplace-a1ba40558a385b42.js"
-    ],
-    "/mynft": [
-      "static/chunks/webpack-98d49c981df2f6c0.js",
-      "static/chunks/framework-bb5c596eafb42b22.js",
-      "static/chunks/main-9c07fd5b45d39649.js",
-      "static/chunks/0a6e12db-618a59df53cb564c.js",
-      "static/chunks/294-bb9749f32f4db5f1.js",
-      "static/chunks/669-da7a0bdf644d830c.js",
-      "static/chunks/704-62937d449022db32.js",
-      "static/chunks/pages/mynft-7a3e449a56623438.js"
-    ],
-    "/resell-nft": [
-      "static/chunks/webpack-98d49c981df2f6c0.js",
-      "static/chunks/framework-bb5c596eafb42b22.js",
-      "static/chunks/main-9c07fd5b45d39649.js",
-      "static/chunks/0a6e12db-618a59df53cb564c.js",
-      "static/chunks/294-bb9749f32f4db5f1.js",
-      "static/chunks/669-da7a0bdf644d830c.js",
-      "static/chunks/704-62937d449022db32.js",
-      "static/chunks/pages/resell-nft-e245a32fc85e5ff3.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/marketplace.js"
     ],
     "/sellnft": [
-      "static/chunks/webpack-98d49c981df2f6c0.js",
-      "static/chunks/framework-bb5c596eafb42b22.js",
-      "static/chunks/main-9c07fd5b45d39649.js",
-      "static/chunks/0a6e12db-618a59df53cb564c.js",
-      "static/chunks/294-bb9749f32f4db5f1.js",
-      "static/chunks/977-2228c91157505bce.js",
-      "static/chunks/704-62937d449022db32.js",
-      "static/chunks/pages/sellnft-4bccb044f2333866.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/sellnft.js"
     ]
   },
   "ampFirstPages": []
